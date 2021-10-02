@@ -11,8 +11,16 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
+    UnityEngine.UI.dll:
+    - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
+    - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Image
+    - UnityEngine.UI.Text
   sceneClasses:
-    Assets/Scenes/Scene1.unity:
+    Assets/Scenes/Main Scene.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -44,14 +52,30 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 1486}
+    - Class: 114
       Script: {instanceID: 2202}
+    - Class: 114
+      Script: {instanceID: 2210}
     - Class: 114
       Script: {instanceID: 2546}
     - Class: 114
+      Script: {instanceID: 2634}
+    - Class: 114
       Script: {instanceID: 2762}
     - Class: 114
+      Script: {instanceID: 2818}
+    - Class: 114
       Script: {instanceID: 2992}
+    - Class: 114
+      Script: {instanceID: 3042}
+    - Class: 114
+      Script: {instanceID: 3358}
+    - Class: 114
+      Script: {instanceID: 3494}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 136
       Script: {instanceID: 0}
@@ -59,7 +83,15 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
-    Assets/Scenes/Scene2.unity:
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Scene 2.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -91,14 +123,30 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 1486}
+    - Class: 114
       Script: {instanceID: 2202}
+    - Class: 114
+      Script: {instanceID: 2210}
     - Class: 114
       Script: {instanceID: 2546}
     - Class: 114
+      Script: {instanceID: 2634}
+    - Class: 114
       Script: {instanceID: 2762}
     - Class: 114
+      Script: {instanceID: 2818}
+    - Class: 114
       Script: {instanceID: 2992}
+    - Class: 114
+      Script: {instanceID: 3042}
+    - Class: 114
+      Script: {instanceID: 3358}
+    - Class: 114
+      Script: {instanceID: 3494}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 136
       Script: {instanceID: 0}
@@ -106,7 +154,15 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
-    Assets/Scenes/Scene3.unity:
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Scene 3.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -138,20 +194,44 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 1486}
+    - Class: 114
       Script: {instanceID: 2202}
+    - Class: 114
+      Script: {instanceID: 2210}
     - Class: 114
       Script: {instanceID: 2546}
     - Class: 114
+      Script: {instanceID: 2634}
+    - Class: 114
       Script: {instanceID: 2762}
     - Class: 114
+      Script: {instanceID: 2818}
+    - Class: 114
       Script: {instanceID: 2992}
+    - Class: 114
+      Script: {instanceID: 3042}
+    - Class: 114
+      Script: {instanceID: 3358}
+    - Class: 114
+      Script: {instanceID: 3494}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 136
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -432,7 +512,7 @@ ScriptsOnlyBuild:
     className: TMP_Settings
   - hash:
       serializedVersion: 2
-      Hash: 113b7250f594ac1ab0ab2418f8bf079f
+      Hash: be880f0025290ee88a38ebf3992d26ff
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameController
@@ -606,7 +686,7 @@ ScriptsOnlyBuild:
     className: TextContainer
   platform: 5
   scenePathNames:
-  - Assets/Scenes/Scene2.unity
-  - Assets/Scenes/Scene1.unity
-  - Assets/Scenes/Scene3.unity
-  playerPath: C:/Users/hotts/EndlessRunner/Builds/EndlessRunner.exe
+  - Assets/Scenes/Main Scene.unity
+  - Assets/Scenes/Scene 2.unity
+  - Assets/Scenes/Scene 3.unity
+  playerPath: C:/Users/hotts/EndlessRunner/Builds/EndlessRunner_Data/EndlessRunner.exe
