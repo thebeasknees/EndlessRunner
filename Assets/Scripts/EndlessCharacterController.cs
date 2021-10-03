@@ -49,6 +49,11 @@ public class EndlessCharacterController : MonoBehaviour
             Debug.Log("Obstacle Hit");
             gameController.health -= 10;
         }
+        if (other.gameObject.tag == "deathPlatform")
+        {
+            Debug.Log("Death Platform Hit");
+            gameController.health = 0;
+        }
     }
 
     /*  void FixedUpdate()

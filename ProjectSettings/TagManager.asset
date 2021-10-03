@@ -4,8 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Platform
   - Obstacle
+  - Platform
+  - deathPlatform
   layers:
   - Default
   - TransparentFX
