@@ -7,6 +7,9 @@ public class PlatformGenerator : MonoBehaviour
     [SerializeField] private GameObject platform;
     [SerializeField] private GameObject deathPlatform;
     [SerializeField] private GameObject obstacle;
+    [SerializeField] private GameObject healthUp;
+    [SerializeField] private GameObject deathBall;
+    [SerializeField] private GameObject speedUp;
     [SerializeField] private float distanceThreshold;
     GameObject player;
     private Vector3 nextPlatformPos = Vector3.zero;
@@ -38,6 +41,18 @@ public class PlatformGenerator : MonoBehaviour
                 deathPlatform.transform.position = new Vector3(Random.Range(-2, 3), -10, Random.Range(-20, 21));
                 GameObject dp = Instantiate(deathPlatform, nextPlatformPos + deathPlatform.transform.position, Quaternion.identity);
                 dp.transform.parent = plat.transform;
+
+                healthUp.transform.position = new Vector3(Random.Range(-2, 3), 1, Random.Range(-20, 21));
+                GameObject hu = Instantiate(healthUp, nextPlatformPos + healthUp.transform.position, Quaternion.identity);
+                hu.transform.parent = plat.transform;
+
+                deathBall.transform.position = new Vector3(Random.Range(-2, 3), 1, Random.Range(-20, 21));
+                GameObject db = Instantiate(deathBall, nextPlatformPos + deathBall.transform.position, Quaternion.identity);
+                db.transform.parent = plat.transform;
+
+                speedUp.transform.position = new Vector3(Random.Range(-2, 3), 1, Random.Range(-20, 21));
+                GameObject su = Instantiate(speedUp, nextPlatformPos + speedUp.transform.position, Quaternion.identity);
+                su.transform.parent = plat.transform;
             }
             nextPlatformPos += new Vector3(Random.Range(-2, 3), Random.Range(-2, 2), 55);
         }

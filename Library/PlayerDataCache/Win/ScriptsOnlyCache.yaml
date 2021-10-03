@@ -20,7 +20,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Image
     - UnityEngine.UI.Text
   sceneClasses:
-    Assets/Scenes/Main Scene 1.unity:
+    Assets/Scenes/1.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -76,6 +76,8 @@ ScriptsOnlyBuild:
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
+      Script: {instanceID: 0}
+    - Class: 135
       Script: {instanceID: 0}
     - Class: 136
       Script: {instanceID: 0}
@@ -91,7 +93,7 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
-    Assets/Scenes/Main Scene 2.unity:
+    Assets/Scenes/2.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -147,6 +149,8 @@ ScriptsOnlyBuild:
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
+      Script: {instanceID: 0}
+    - Class: 135
       Script: {instanceID: 0}
     - Class: 136
       Script: {instanceID: 0}
@@ -162,7 +166,7 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
-    Assets/Scenes/Main Scene.unity:
+    Assets/Scenes/3.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -218,6 +222,8 @@ ScriptsOnlyBuild:
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
+      Script: {instanceID: 0}
+    - Class: 135
       Script: {instanceID: 0}
     - Class: 136
       Script: {instanceID: 0}
@@ -470,7 +476,7 @@ ScriptsOnlyBuild:
     className: SignalReceiver
   - hash:
       serializedVersion: 2
-      Hash: a35b44cc986945979da8b2a79a96d367
+      Hash: 81470b9002f16ac7a7c45bf1db898e35
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlatformGenerator
@@ -512,7 +518,7 @@ ScriptsOnlyBuild:
     className: TMP_Settings
   - hash:
       serializedVersion: 2
-      Hash: be880f0025290ee88a38ebf3992d26ff
+      Hash: 4f77e3d6064d8dc7a6627e0664b6e80d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameController
@@ -686,7 +692,7 @@ ScriptsOnlyBuild:
     className: TextContainer
   platform: 5
   scenePathNames:
-  - Assets/Scenes/Main Scene.unity
-  - Assets/Scenes/Main Scene 1.unity
-  - Assets/Scenes/Main Scene 2.unity
+  - Assets/Scenes/1.unity
+  - Assets/Scenes/2.unity
+  - Assets/Scenes/3.unity
   playerPath: C:/Users/hotts/EndlessRunner/Builds/EndlessRunner_Data/EndlessRunner.exe

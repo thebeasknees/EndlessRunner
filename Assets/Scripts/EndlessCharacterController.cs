@@ -32,7 +32,7 @@ public class EndlessCharacterController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Platform")
+        if (collision.gameObject.tag == "Platform") 
             isGrounded = true;
     }
 
@@ -53,6 +53,21 @@ public class EndlessCharacterController : MonoBehaviour
         {
             Debug.Log("Death Platform Hit");
             gameController.health = 0;
+        }
+        if (other.gameObject.tag == "deathBall")
+        {
+            Debug.Log("Death Ball hit!");
+            gameController.health = 0;  
+        }
+        if (other.gameObject.tag == "healthUp")
+        {
+            gameController.health += 10;
+            Debug.Log("Health gained!");
+        }
+        if (other.gameObject.tag == "speedUp")
+        {
+            gameController.speed += 3;
+            Debug.Log("Speed increased!!");
         }
     }
 

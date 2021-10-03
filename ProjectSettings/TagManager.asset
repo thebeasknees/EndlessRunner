@@ -7,6 +7,10 @@ TagManager:
   - Obstacle
   - Platform
   - deathPlatform
+  - healthUp
+  - deathBall
+  - speedUp
+  - levelCompleteText
   layers:
   - Default
   - TransparentFX

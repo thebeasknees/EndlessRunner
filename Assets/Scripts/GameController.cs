@@ -10,16 +10,18 @@ public class GameController : MonoBehaviour
      public int health = 50;
      public int timer = 10;
     [SerializeField] private Text timerText;
+    [SerializeField] private Text levelText;
+    [SerializeField] private Text levelCompleteText;
     [SerializeField] private GameObject healthBar;
     
-
     // Start is called before the first frame update
     void Start()
     {
         health = PlayerPrefs.GetInt("PlayerHealth", health = 50);
-        speed = PlayerPrefs.GetInt("PlayerSpeed", 5);
+        speed = PlayerPrefs.GetInt("PlayerSpeed", 7);
         timer = PlayerPrefs.GetInt("PlayerTimer", 30);
         jumpIntensity = PlayerPrefs.GetFloat("PlayerJump", 7f);
+        levelText.text = "Level: " + SceneManager.GetActiveScene().name;
         StartCoroutine("CountDown");
     }
 
@@ -27,6 +29,7 @@ public class GameController : MonoBehaviour
     {
         while(timer >= 0)
         {
+            GameObject.FindGameObjectWithTag("levelCompleteText").GetComponent<Text>().enabled = false;
             timerText.text = "Timer: " + timer;
             // wait for 1 second
             yield return new WaitForSeconds(1);
@@ -34,6 +37,7 @@ public class GameController : MonoBehaviour
         }
         // pause the player, load the UI message
         GameObject.FindGameObjectWithTag("Player").GetComponent<EndlessCharacterController>().enabled = false;
+        GameObject.FindGameObjectWithTag("levelCompleteText").GetComponent<Text>().enabled = true;
         yield return new WaitForSeconds(2);
         ChangeLevel();
     }
